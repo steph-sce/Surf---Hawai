@@ -18,22 +18,23 @@
     }
   });
 
-  app.config(['$routeProvider',
-    function ($routeProvider) {
+
+  app.config(function($routeProvider){
+      $routeProvider
       // Routage
       $routeProvider.when('/', {
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-      .when('produits.html', {
+
+      .when('/produits', {
         templateUrl: 'partials/produits.html',
-        controller: 'MainController'
+        controller: 'produitController'
       })
-      .when('contact.html', {
+      .when('/contact', {
         templateUrl: 'partials/contact.html',
-        controller: 'MainController'
+        controller: 'contactController'
       });
-    }
-  ]);
+  });
 
 })();
