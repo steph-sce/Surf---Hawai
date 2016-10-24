@@ -26,11 +26,11 @@
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-      .when('produits.html', {
+      .when('produits', {
         templateUrl: 'partials/produits.html',
         controller: 'MainController'
       })
-      .when('contact.html', {
+      .when('contact', {
         templateUrl: 'partials/contact.html',
         controller: 'MainController'
       });
