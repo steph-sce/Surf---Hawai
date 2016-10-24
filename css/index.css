@@ -4,3 +4,6 @@ body {
 .parallax-container {
       height: 400px;
     }
+.brand-logo {
+	margin-left: 20px;
+}
