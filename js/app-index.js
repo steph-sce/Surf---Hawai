@@ -4,4 +4,29 @@
 
   });
 
+  app.directive('header', function () {
+    return {
+      restrict: 'A',
+      templateUrl: 'partials/header.html'
+    }
+  });
+
+  app.config(['$routeProvider',
+    function ($routeProvider) {
+      // Routage
+      $routeProvider.when('/', {
+        templateUrl: 'partials/home.html',
+        controller: 'MainController'
+      })
+      .when('/produits.html', {
+        templateUrl: 'partials/produits.html',
+        controller: 'MainController'
+      })
+      .when('/contact.html', {
+        templateUrl: 'partials/contact.html',
+        controller: 'MainController'
+      });
+    }
+  ]);
+
 })();
