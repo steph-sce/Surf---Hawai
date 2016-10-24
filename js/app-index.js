@@ -1,5 +1,6 @@
 (function() {
   var app = angular.module('SurfHawai', ['ngRoute']);
+
   app.controller('MainController', function () {
 
   });
@@ -18,11 +19,11 @@
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-      .when('/produits.html', {
+      .when('produits.html', {
         templateUrl: 'partials/produits.html',
         controller: 'MainController'
       })
-      .when('/contact.html', {
+      .when('contact.html', {
         templateUrl: 'partials/contact.html',
         controller: 'MainController'
       });
@@ -30,3 +31,8 @@
   ]);
 
 })();
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        

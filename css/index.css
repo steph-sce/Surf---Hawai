@@ -1,3 +1,6 @@
 body {
   background:#eee;
 }
+.parallax-container {
+      height: 200px;
+    }
