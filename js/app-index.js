@@ -11,13 +11,13 @@
       templateUrl: 'partials/header.html'
     }
   });
-  app.directive('footer', function () {
+
+   app.directive('footer', function () {
     return {
       restrict: 'A',
       templateUrl: 'partials/footer.html'
     }
   });
-
 
   app.config(function($routeProvider){
       $routeProvider
@@ -26,7 +26,6 @@
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
-
       .when('/produits', {
         templateUrl: 'partials/produits.html',
         controller: 'produitController'
