@@ -23,18 +23,23 @@
     }
   });
 
-  app.config(['$routeProvider',
-    function ($routeProvider) {
+  app.config(function($routeProvider){
+      $routeProvider
       // Routage
       $routeProvider.when('/', {
         templateUrl: 'partials/home.html',
         controller: 'MainController'
       })
 <<<<<<< HEAD
+<<<<<<< HEAD
       .when('produits.html', {
+=======
+      .when('/produits', {
+>>>>>>> 1e59330e058fc6f2bb3235ae35491a28dab40054
         templateUrl: 'partials/produits.html',
-        controller: 'MainController'
+        controller: 'produitController'
       })
+<<<<<<< HEAD
       .when('contact.html', {
 =======
       .when('produits', {
@@ -43,11 +48,13 @@
       })
       .when('contact', {
 >>>>>>> ef99924d90b74a0191e25c97726fe34e91fecefa
+=======
+      .when('/contact', {
+>>>>>>> 1e59330e058fc6f2bb3235ae35491a28dab40054
         templateUrl: 'partials/contact.html',
-        controller: 'MainController'
+        controller: 'contactController'
       });
-    }
-  ]);
+  });
 
 })();
 <<<<<<< HEAD
