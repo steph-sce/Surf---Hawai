@@ -2,6 +2,7 @@
   var app = angular.module('SurfHawai', ['ngRoute']);
 
   app.controller('MainController', function () {
+
   });
 
   app.controller('FormController', ['$scope',function($scope){
@@ -13,7 +14,12 @@
       $scope.user = angular.copy($scope.master);
     };
     $scope.reset();
-    
+
+
+    this.send = function () {
+      alert('Message envoyé !');
+    };
+
   }]);
 
   app.controller('ProduitsController', function(){
@@ -37,7 +43,7 @@
 
   app.config(function($routeProvider){
       $routeProvider
-      
+
       .when('/', {
         templateUrl: 'partials/home.html',
         controller: 'MainController'
@@ -48,7 +54,7 @@
       })
       .when('/contact', {
         templateUrl: 'partials/contact.html',
-        controller: 'contactController'
+        controller: 'FormController'
       });
   });
 
