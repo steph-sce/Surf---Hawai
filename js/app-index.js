@@ -63,11 +63,11 @@ var object = [
 {
   image: "img/top-bikini-triangle-noir-blanc-billabong.jpg",
   titre: "Maillots Femmes",
-  content: "Les mailots qui vous rendent jolie et sportive miam vous serez à croquer là dedans FETCH ++ -ALL."
+  content: "Les maillots qui vous rendent jolie et sportive miam vous serez à croquer là dedans FETCH ++ -ALL."
 },
 {
   image: "img/25530750-Surfer-plage-mode-de-vie-des-gens-homme-surf-fonctionnant-avec-de-bodyboard-dans-l-eau-sur-la-plage--Banque-d'images.jpg",
-  titre: "Maillot Hommes",
+  titre: "Maillots Hommes",
   content: "Vous allez faire craquer Madame avec votre grosse... planche"
 },
 {
