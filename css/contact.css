@@ -3,6 +3,14 @@
   .contact{
     margin-top: 100px;
   } 
+
+  .ng-invalid.ng-touched{
+    background-color: red;
+  }
+
+  .ng-valid.ng-touched{
+    background-color: blue;
+  }
    .input-field label {
      color: #000;
    }
