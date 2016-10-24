@@ -25,7 +25,8 @@
       templateUrl: 'partials/header.html'
     }
   });
-  app.directive('footer', function () {
+
+   app.directive('footer', function () {
     return {
       restrict: 'A',
       templateUrl: 'partials/footer.html'
