@@ -11,6 +11,12 @@
       templateUrl: 'partials/header.html'
     }
   });
+  app.directive('footer', function () {
+    return {
+      restrict: 'A',
+      templateUrl: 'partials/footer.html'
+    }
+  });
 
   app.config(['$routeProvider',
     function ($routeProvider) {
@@ -31,8 +37,3 @@
   ]);
 
 })();
-
-$(document).ready(function(){
-      $('.parallax').parallax();
-    });
-        
