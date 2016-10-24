@@ -1,105 +1,19 @@
 
-    <div class="row">
-            <div class="col s1 m4">
-              <div class="card">
+    <div class="row" ng-controller="ProduitsController as store">
+        <div class="col s1 m4" ng-repeat="product in store.products">
+          <div class="card">
                 <div class="card-image">
 
-                  <img src="../img/top-bikini-triangle-noir-blanc-billabong.jpg" style="display:inline" width="350" height="350">
+                  <img src="{{product.image}}" style="display:inline" width="350" height="350">
 
                 </div>
                 <div class="card-content">
-                  <p>Les mailot qui vous rende jolie et sportive miam vous serez a croquer la dedans FETCH ++ -ALL.</p>
+                  <p>{{product.content}}</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">Maillot Femmes</a>
+                  <a>{{product.titre}}</a>
                 </div>
-              </div>
+             
             </div>
-
-
-
-            <div class="col s1 m4">
-              <div class="card">
-                <div class="card-image">
-
-                  <img src="../img/25530750-Surfer-plage-mode-de-vie-des-gens-homme-surf-fonctionnant-avec-de-bodyboard-dans-l-eau-sur-la-plage--Banque-d'images.jpg" style="display:inline" alt="Bird" width="350" height="350">
-
-                </div>
-                <div class="card-content">
-                  <p>Vous allez faire craquer Madame avec votre grosse... planche</p>
-                </div>
-                <div class="card-action">
-                  <a href="#">Maillot Hommes</a>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s1 m4">
-              <div class="card">
-                <div class="card-image">
-
-                  <img src="../img/surfboard-design-1.jpg" style="display:inline" width="350" height="350">
-
-                </div>
-                <div class="card-content">
-                  <p>Planche de SURF</p><br>
-                </div>
-                <div class="card-action">
-                  <a href="#">SurfBoard</a>
-                </div>
-              </div>
-            </div>
+        </div>
     </div>
-
-    <div class="row">
-            <div class="col s1 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="http://fr.ubergizmo.com/wp-content/uploads/2008/02/collapsible_surf2-gi.jpg" style="display:inline" width="350" height="350">
-                  
-                </div>
-                <div class="card-content">
-                  <p>Accessoires planches de SURF</p><br>
-                </div>
-                <div class="card-action">
-                  <a href="#">Accessoires</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s1 m4">
-              <div class="card">
-                <div class="card-image">
-
-                  <img src="../img/cours.png" style="display:inline" width="350" height="350">
-
-                </div>
-                <div class="card-content">
-                  <p>Cours de SURF</p><br>
-                </div>
-                <div class="card-action">
-                  <a href="#">Cours</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s1 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="../img/surf-cream__71143.1457479031.jpg" style="display:inline" width="350" height="350">
-                  
-                </div>
-                <div class="card-content">
-                  <p>Produit d'entretien</p><br>
-                </div>
-                <div class="card-action">
-                  <a href="#">Produit</a>
-                </div>
-              </div>
-            </div>
-    </div>
-
-
-  </body>
-
