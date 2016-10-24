@@ -1,4 +1,8 @@
  /* label color */
+
+  .contact{
+    margin-top: 100px;
+  } 
    .input-field label {
      color: #000;
    }
